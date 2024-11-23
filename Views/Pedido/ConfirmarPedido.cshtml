@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "ConfirmarPedido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <link rel="stylesheet" href="/css/confirmarpedido.css">
+</head>
+
+<div class="order-container">
+    <div class="delivery-details">
+        <h3>Confirmar tu Pedido</h3>
+        <div class="details">
+            <h5>Detalles de la entrega</h5>
+            <div class="detail-item">
+
+                <span>📍</span>
+                <input type="text" value="José Inclan 581 - Sta María V etapa">
+            </div>
+            <div class="detail-item">
+                <span>🚚</span>
+                <input type="text" value="Delivery 25 - 35min" readonly>
+            </div>
+        </div>
+
+        <h5>Medios de Pago</h5>
+        <div class="payment">
+            <select>
+                <option>Elegir Medio de Pago</option>
+                <option>Efectivo</option>
+                <option>Yape</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="order-summary">
+        <h5>Resumen</h5>
+        <div class="summary-item">
+            <span>Producto</span>
+            <span>s/38.00</span>
+        </div>
+        <div class="summary-item">
+            <span>Envío</span>
+            <span>s/8.00</span>
+        </div>
+        <div class="summary-item-total">
+            <span>Total</span>
+            <span>s/46.00</span>
+        </div>
+
+
+        <button class="pay-button">Pagar <strong>s/46.00</strong></button>
+    </div>
+</div>
+

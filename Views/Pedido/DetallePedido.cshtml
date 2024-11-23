@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "DetallePedido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="/css/detallepedido.css">
+</head>
+
+
+<div class="main-container">
+    <div class="cart-items">
+        <div class="item">
+            <img src="~/images/tocinomania.jpg" alt="Tocinomanía">
+            <div class="item-info">
+                <h3>Tocinomanía</h3>
+                <p align="justify">(Alitas x6)<br>Alitas de pollo envueltas en una salsa de tocino ahumado, acompañadas de papas fritas doradas o sabrosos patacones.</p>
+                <span>s/. 18.00</span>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/bbq_madness.jpg" alt="BBQ">
+            <div class="item-info">
+                <h3>BBQ</h3>
+                <p align="justify">(Alitas x6)<br>Alitas de pollo envueltas en salsa BBQ, acompañadas de papas fritas doradas o sabrosos patacones.</p>
+                <span>s/. 20.00</span>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+        <h3>Tu Carrito</h3>
+        <div class="delivery-options">
+            <button class="option active">Delivery<br>25-35min / s/.8.00</button>
+            <button class="option">Retiro<br>15-25min</button>
+        </div>
+
+        <div class="special-instructions">
+            <textarea id="instructions" placeholder="Enviar solo mayonesa"></textarea>
+        </div>
+        <div class="summary">
+            <p>Producto: <span>s/. 38.00</span></p>
+            <p>Envío: <span>s/. 8.00</span></p>
+            <p class="total">Total: <span>s/. 46.00</span></p>
+        </div>
+        <button class="pay-button">Ir a pagar</button>
+    </div>
+</div>
+

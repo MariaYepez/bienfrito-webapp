@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "PedidoConfirmado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="/css/pedidoconfirmado.css">
+</head>
+
+<div class="main-container">
+    
+    <div class="cart-items">
+        <h3 class="h3">Pedido Confirmado!</h3>
+        <div class="item">
+            <img src="~/images/tocinomania.jpg" alt="Tocinomanía">
+            <div class="item-info">
+                <h5>Tocinomanía</h5>
+                <p align="justify">(Alitas x6)<br>Alitas de pollo envueltas en una salsa de tocino ahumado, acompañadas de papas fritas doradas o sabrosos patacones.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/bbq_madness.jpg" alt="BBQ">
+            <div class="item-info">
+                <h5>BBQ</h5>
+                <p align="justify">(Alitas x6)<br>Alitas de pollo envueltas en salsa BBQ, acompañadas de papas fritas doradas o sabrosos patacones.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+        <img  class="confirm"  src="~/images/confirmado.png" alt="confirmado">
+        <div class="order-summary">
+            <div class="summary-item-total">
+                <span>Repartidor</span>
+                <span>Juan Perez</span>
+            </div>
+            <div class="summary-item-total">
+                <span>Monto Pagado</span>
+                <span>s/46.00</span>
+            </div>
+        </<div>
+    </div>
+</div>
