@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BienFritoWebApp.Models.Producto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+
+    <div>
+    <div class="banner mb-4" align="right">
+        <img src="/images/granoferta.jpg" alt="Gran oferta" class="img-fluid">
+    </div>
+
+    <div class="categories mb-3">
+        <button class="btn btn-danger">Alitas</button>
+        <button class="btn btn-secondary">Guarniciones</button>
+        <button class="btn btn-secondary">Bebidas</button>
+    </div>
+    </div>
+
+    <div class="row">
+        @foreach (var producto in Model)
+        {
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card text-center">
+                    <img src="@producto.FotoUrl" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">@producto.Nombre</h5>
+                        <p class="card-text">@producto.Descripcion</p>
+                        <p class="text-danger">s/.@producto.Precio</p>
+                        <button class="btn btn-danger" @(producto.Stock <= 0 ? "disabled" : "")>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
