@@ -1,0 +1,28 @@
+.container_home {
+   // background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(140deg, #E30613, #ffeA00);
+}
+
+.hero_text {
+    //border: 3px solid green;
+    color: white;
+    width: 80%;
+}
+
+.hero_text p {
+    font: bold;
+}
+
+.hero_img img {
+    //border: 3px solid blue;
+    width: 500px;
+   // height: 300px;
+}
