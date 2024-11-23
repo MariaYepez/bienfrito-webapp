@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart-items {
+    flex: 2;
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    /*border: 1px solid #ddd;*/
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+    .item img {
+        margin-top: 30px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ddd;
+    }
+
+.item-info {
+    flex: 1;
+}
+
+    .item-info h3 {
+        margin: 0;
+        color: #333;
+    }
+
+.quantity {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .quantity button {
+        padding: 5px;
+        background-color: #e63946;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+.cart-summary {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    /*border: 1px solid #ddd;*/
+    border-radius: 5px;
+}
+
+    .cart-summary h3 {
+        margin-top: 0;
+    }
+
+.delivery-options button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .delivery-options button.active {
+        background-color: #e63946;
+        color: #fff;
+    }
+
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.summary .total {
+    font-weight: bold;
+}
+
+.pay-button {
+    width: 100%;
+    background: white;
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .pay-button:hover {
+        background: red;
+        color: white;
+        transition: 0.3s;
+    }
+
+h3 {
+    text-align: center;
+}
+
+
+.delivery-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.option {
+    padding: 10px 20px;
+    border: 2px solid #ff4500;
+    border-radius: 20px;
+    background-color: white;
+    color: #ff4500;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .option.active {
+        background-color: #ff4500;
+        color: white;
+    }
+
+    .option:hover {
+        background-color: #ffd700;
+        color: white;
+    }
+
+.special-instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .special-instructions label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .special-instructions textarea {
+        width: 100%;
+        max-width: 400px;
+        min-height: 100px;
+        padding: 10px;
+        border: 2px solid #ffd700;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        resize: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .special-instructions textarea:focus {
+            border-color: #ffcc00;
+            box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+            outline: none;
+        }
+
+.confirm {
+    height: 350px;
+}
+
+.delivery-details, .order-summary {
+    flex: 1;
+    border-radius: 8px;
+}
+
+.order-summary {
+    margin-top: 41px;
+}
+
+    .details .detail-item, .payment input, .order-summary input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border: 2px solid #ffd700;
+        border-radius: 8px;
+        padding: 10px;
+        background: #f9f9f9;
+    }
+
+    .details input, .payment input, .order-summary input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        outline: none;
+        color: #555;
+    }
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 2px solid #ffd700;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary-item-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 2px solid #FF0000;
+    padding: 10px;
+    border-radius: 8px;
+}

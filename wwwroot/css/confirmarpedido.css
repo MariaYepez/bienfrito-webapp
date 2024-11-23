@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+.order-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.delivery-details, .order-summary {
+    flex: 1;
+    border-radius: 8px;
+}
+
+.order-summary {
+    margin-top: 41px;
+}
+
+h3, h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.details .detail-item, .payment input, .order-summary input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.details input, .payment input, .order-summary input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #555;
+}
+
+.payment select {
+    width: 100%;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    color: #555;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 2px solid #ffd700;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary-item-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 2px solid #FF0000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pay-button {
+    width: 100%;
+    background: white;
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .pay-button:hover {
+        background: red;
+        color: white;
+        transition: 0.3s;
+    }
