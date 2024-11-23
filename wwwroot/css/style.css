@@ -1,0 +1,17 @@
+﻿.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.categories button {
+    margin-right: 8px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .card img {
+        border: 2px solid #f00;
+    }
