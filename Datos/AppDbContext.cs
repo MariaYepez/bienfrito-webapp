@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using BienFritoWebApp.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BienFritoWebApp.Datos;
 
-public partial class AppDbContext : DbContext
+public partial class AppDbContext : IdentityDbContext
 {
     public AppDbContext()
     {
@@ -33,6 +34,8 @@ public partial class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
         modelBuilder.Entity<Cliente>(entity =>
         {
             entity.HasKey(e => e.ClienteId).HasName("PK__Clientes__71ABD0A7BCC4F200");
@@ -138,7 +141,7 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.Precio).HasColumnType("decimal(10, 2)");
         });
 
-        OnModelCreatingPartial(modelBuilder);
+        //OnModelCreatingPartial(modelBuilder);
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
